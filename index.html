@@ -1,340 +1,672 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Boy Resume - Profile HTML Page</title>
-
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Tooplate" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
-
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/all.min.css" />
-		<!-- <link rel="stylesheet" href="css/owl.carousel.min.css" /> -->
-		<!-- <link rel="stylesheet" href="css/owl.theme.default.min.css" /> -->
-
-		<!-- MAIN CSS -->
-		<link rel="stylesheet" href="css/tooplate-boy-resume-style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personal Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon" />
 	</head>
+	<body>
+		<main>
+			<aside class="sidebar" data-sidebar>
+				<div class="sidebar-info">
+					<figure class="avatar-box">
+						<img src="./img/Pasphoto.png" alt="avatar" width="80" />
+					</figure>
 
-	<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-		<!-- MENU BAR -->
-		<nav class="navbar navbar-expand-lg">
-			<div class="container">
-				<a class="navbar-brand" href="#"> Boy Resume </a>
+					<div class="info-content">
+						<h1 class="name" title="Boy Arif Setiawan">Boy Arif Setiawan</h1>
+						<p class="title">Web Developer</p>
+					</div>
 
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+					<button class="info-more-btn" data-sidebar-btn>
+						<span>Show Contacts</span>
+						<ion-icon name="chevron-down"></ion-icon>
+					</button>
+				</div>
 
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav mx-auto">
-						<li class="nav-item">
-							<a href="#intro" class="nav-link smoothScroll">Introduction</a>
+				<div class="sidebar-info-more">
+					<div class="separator"></div>
+
+					<ul class="contacts-list">
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="mail-outline"></ion-icon>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Email</p>
+
+								<a href="mailto:boysetiawan5635@gmail.com" class="contact-link">boysetiawan5635@gmail.com</a>
+							</div>
 						</li>
 
-						<li class="nav-item">
-							<a href="#about" class="nav-link smoothScroll">About Me</a>
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="phone-portrait-outline"></ion-icon>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Phone</p>
+
+								<a href="tel:+628979040919" class="contact-link">+62 8979040919</a>
+							</div>
 						</li>
 
-						<!-- <li class="nav-item">
-							<a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
-						</li> -->
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
 
-						<li class="nav-item">
-							<a href="#contact" class="nav-link smoothScroll">Contact</a>
+							<div class="contact-info">
+								<p class="contact-title">Birthday</p>
+
+								<time datetime="1982-06-23">October 26, 1998</time>
+							</div>
+						</li>
+
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="location-outline"></ion-icon>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Location</p>
+
+								<address>Tangerang Selatan, Banten, Indonesia</address>
+							</div>
+						</li>
+					</ul>
+
+					<div class="separator"></div>
+
+					<ul class="social-list">
+						<li class="social-item">
+							<a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
+						</li>
+						<li class="social-item">
+							<a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
+						</li>
+						<li class="social-item">
+							<a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
 						</li>
 					</ul>
 				</div>
-			</div>
-		</nav>
+			</aside>
 
-		<!-- HERO -->
-		<section
-			class="hero d-flex flex-column justify-content-center align-items-center"
-			id="intro"
-		>
-			<div class="container">
-				<div class="row">
-					<div class="mx-auto col-lg-5 col-md-5 col-10">
-						<img
-							src="images/Pasphoto.png"
-							class="img-fluid boy-img"
-							alt="Boy Resume HTML Template"
-						/>
-					</div>
+			<div class="main-content">
+				<nav class="navbar">
+					<ul class="navbar-list">
+						<li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+						<li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+						<!-- <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li> -->
+						<!-- <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li> -->
+						<li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+					</ul>
+				</nav>
 
-					<div
-						class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12"
-					>
-						<div class="hero-text">
-							<h1 class="hero-title">👋 Boy, a digital nomad</h1>
+				<article class="about active" data-page="about">
+					<header>
+						<h2 class="h2 article-title">About me</h2>
+					</header>
 
-							<a href="#" class="email-link"> boysetiawan5635@gmail.com </a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="about section-padding" id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12">
-						<h3 class="mb-4">This is Boy Resume</h3>
-
+					<section class="about-text">
 						<p>
-							I am a beginner web developer who is enthusiastic and eager to
-							start a career in web development. Although I have no professional
-							work experience, I have a solid basic knowledge of PHP and the
-							Laravel framework, which I gained through the internet and
-							personal practice projects.
+							I am a beginner web developer who is enthusiastic and eager to start a career in web development. Although I have no professional work experience, I have a solid basic
+							knowledge of PHP and the Laravel framework, which I gained through the internet and personal practice projects.
 						</p>
+					</section>
 
-						<ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-							<li><strong>Full Name :</strong> Boy Arif Setiawan</li>
+					<section class="service">
+						<h3 class="h3 service-title">What I'm doing</h3>
 
-							<li><strong>Date of Birth:</strong> 26 Oktober 1998</li>
+						<ul class="service-list">
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40" />
+								</div>
 
-							<!-- <li><strong>Website :</strong> company.co</li> -->
-
-							<li><strong>Email :</strong> boysetiawan5635@gmail.com</li>
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">Web development</h4>
+									<p class="service-item-text">High-quality development of sites at the professional level.</p>
+								</div>
+							</li>
 						</ul>
-					</div>
+					</section>
 
-					<div class="col-lg-5 mx-auto col-md-6 col-12">
-						<img
-							src="images/Fotoalmet.png"
-							class="about-image img-fluid"
-							alt="Boy's Resume HTML Template"
-						/>
-					</div>
-				</div>
-				<!-- <div class="row about-third">
-					<span>Skills</span>
-					<div class="about-skills">
-						<div class="col-lg-4 col-md-4 col-12">
-							<h3>Larvel</h3>
-							<p>
-								Sed eu risus tincidunt, finibus dolor non, gravida ex. Donec
-								lacinia mi nec erat tempus, vel consectetur ante scelerisque. Ut
-								blandit, risus in venenatis ultricies, lacus tellus fermentum.
-							</p>
-						</div>
-						<div class="col-lg-4 col-md-4 col-12">
-							<h3>Vue JS</h3>
-							<p>
-								Cras et nisl vestibulum, accumsan elit sed, pretium enim.
-								Vestibulum in condimentum magna. Maecenas quam magna, iaculis eu
-								turpis et, commodo pulvinar leo.
-							</p>
-						</div>
-						<div class="col-lg-4 col-md-4 col-12">
-							<h3>Iavascript</h3>
-							<p>
-								Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida
-								euismod lectus et, cursus tempor nulla. Praesent at turpis quis
-								ex tristique gravida quis eget eros.
-							</p>
-						</div>
-						<div class="col-lg-4 col-md-4 col-12">
-							<h3>PHP</h3>
-							<p>
-								Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida
-								euismod lectus et, cursus tempor nulla. Praesent at turpis quis
-								ex tristique gravida quis eget eros.
-							</p>
-						</div>
-					</div>
-				</div> -->
-			</div>
-		</section>
+					<section class="stack">
+						<h3 class="h3 stack-title">My Tech Stack</h3>
 
-		<!-- TESTIMONIAL -->
-		<section>
-			<div class="container-skills">
-				<h3>Skills</h3>
-				<div class="skills">
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/bootstrap.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/CSS.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/html5.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/Laravel.png"
-								class="img-fluid"
-								width="60px"
-								height="60px"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/mysql.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/PHP.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/tailwindcss.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonials-image">
-							<img
-								src="images/testimonials/Vue.png"
-								class="img-fluid"
-								alt="testimonials image"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+						<ul class="stack-list has-scrollbar">
+							<li class="stack-item">
+								<div class="content-card">
+									<img src="./img/bootstrap.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Bootstrap</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/CSS.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">CSS</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/docker.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Docker</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/git.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Git</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/github.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Github</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/html5.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Html</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/InertiaJS.jpg" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Inertia JS</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/Laravel.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Laravel</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/mysql.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">MySQL</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/PHP.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">PHP</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/restapi.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Rest API</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/tailwindcss.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Tailwindcss</h4>
+								</div>
+								<div class="content-card">
+									<img src="./img/Vue.png" alt="avatar" style="width: 50px; height: 50px" />
+									<h4 class="h5 stack-item-title">Vue JS</h4>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</article>
 
-		<section class="contact section-padding pt-0" id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12">
-						<form
-							action="#"
-							method="get"
-							class="contact-form webform"
-							role="form"
-						>
-							<div class="form-group d-flex flex-column-reverse">
-								<input
-									type="text"
-									class="form-control"
-									name="cf-name"
-									id="cf-name"
-									placeholder="Your Name"
-								/>
+				<article class="resume" data-page="resume">
+					<header>
+						<h2 class="h2 article-title">Resume</h2>
+					</header>
 
-								<label for="cf-name" class="webform-label">Full Name</label>
+					<section class="timeline">
+						<div class="title-wrapper">
+							<div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+							<h3 class="h3">Education</h3>
+						</div>
+
+						<ol class="timeline-list">
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Pamulang University of Informatics Engineering</h4>
+								<span>2019 - 2024</span>
+								<p class="timeline-text">
+									There I learnt a wide range of topics that are essential to understanding both the theory and practical aspects of computing. This involves programming
+									fundamentals, computer architecture, operating systems, databases, software engineering, problem solving, collaboration and communication soft skills.
+								</p>
+							</li>
+
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">multimedia vocational high school</h4>
+								<span>2013 - 2016</span>
+								<p class="timeline-text">
+									Vocational High School (SMK) majoring in Multimedia is a secondary level vocational education that focuses on mastering digital and creative technologies, such as:
+									Graphic design, Animation Photography and videography Audio/video, processing Web design & interactive multimedia The goal is to equip students with practical
+									skills to be ready to work in the digital creative industry.
+								</p>
+							</li>
+						</ol>
+					</section>
+
+					<section class="timeline">
+						<div class="title-wrapper">
+							<div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+							<h3 class="h3">Experience</h3>
+						</div>
+
+						<ol class="timeline-list">
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">PT. Virtus Facility Services (Jakarta, Indonesia)</h4>
+								<span>Housekeeping Role at Virtus Facility Services, Dec 1, 2018 - May 3, 2024 (5 years 6 months)</span>
+								<p class="timeline-text">
+									Job Description : • Organizing Rooms: Tidying up items, arranging furniture, and ensuring rooms look well-organized. • Reporting Maintenance Issues: Housekeeping is
+									often the first to detect maintenance issues, such as leaky faucets or broken lights, which are then reported to maintenance. • Maintaining Cleanliness and Hygiene:
+									Cleaning and disinfecting frequently touched surfaces to maintain a clean and healthy environment.
+								</p>
+							</li>
+						</ol>
+					</section>
+
+					<section class="skill">
+						<h3 class="h3 skills-title">My Skills</h3>
+
+						<ul class="skills-list content-card">
+							<li class="skills-item">
+								<div class="title-wrapper">
+									<h5 class="h5">Web Design</h5>
+									<data value="80">60%</data>
+								</div>
+
+								<div class="skills-progress-bg">
+									<div class="skills-progress-fill" style="width: 60%"></div>
+								</div>
+							</li>
+
+							<li class="skills-item">
+								<div class="title-wrapper">
+									<h5 class="h5">Graphic Design</h5>
+									<data value="70">60%</data>
+								</div>
+
+								<div class="skills-progress-bg">
+									<div class="skills-progress-fill" style="width: 60%"></div>
+								</div>
+							</li>
+
+							<li class="skills-item">
+								<div class="title-wrapper">
+									<h5 class="h5">Php (Laravel)</h5>
+									<data value="90">80%</data>
+								</div>
+
+								<div class="skills-progress-bg">
+									<div class="skills-progress-fill" style="width: 80%"></div>
+								</div>
+							</li>
+
+							<li class="skills-item">
+								<div class="title-wrapper">
+									<h5 class="h5">Vue Js</h5>
+									<data value="50">70%</data>
+								</div>
+
+								<div class="skills-progress-bg">
+									<div class="skills-progress-fill" style="width: 70%"></div>
+								</div>
+							</li>
+
+							<li class="skills-item">
+								<div class="title-wrapper">
+									<h5 class="h5">Databases MySQL</h5>
+									<data value="50">60%</data>
+								</div>
+
+								<div class="skills-progress-bg">
+									<div class="skills-progress-fill" style="width: 60%"></div>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</article>
+
+				<article class="portfolio" data-page="portfolio">
+					<header>
+						<h2 class="h2 article-title">Portfolio</h2>
+					</header>
+
+					<section class="projects">
+						<ul class="filter-list">
+							<li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+							<li class="filter-item"><button data-filter-btn>Web Design</button></li>
+							<li class="filter-item"><button data-filter-btn>Applications</button></li>
+							<li class="filter-item"><button data-filter-btn>Web Development</button></li>
+						</ul>
+
+						<div class="filter-select-box">
+							<button class="filter-select" data-select>
+								<div class="select-value" data-select-value>Select Category</div>
+
+								<div class="select-icon">
+									<ion-icon name="chevron-down"></ion-icon>
+								</div>
+							</button>
+
+							<ul class="select-list">
+								<li class="select-item"><button data-select-item>All</button></li>
+								<li class="select-item"><button data-select-item>Web Design</button></li>
+								<li class="select-item"><button data-select-item>Applications</button></li>
+								<li class="select-item"><button data-select-item>Web Development</button></li>
+							</ul>
+						</div>
+
+						<ul class="project-list">
+							<li class="project-item active" data-filter-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="finance" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Finance</h3>
+									<p class="project-category">Web Development</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/bNrcM2Wt/project-2.png" alt="orizon" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Orizon</h3>
+									<p class="project-category">Web Development</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="web design">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/jSJVqYsq/project-3.jpg" alt="fundo" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Fundo</h3>
+									<p class="project-category">Web Design</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="applications">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/dtpXxNGb/project-4.png" alt="brawlhalla" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Brawlhalla</h3>
+									<p class="project-category">Applications</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="web design">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/43T0JKLw/project-5.png" alt="dsm." loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">DSM.</h3>
+									<p class="project-category">Web Design</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="web design">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/qR1DX1kZ/project-6.png" alt="metaspark" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Metaspark</h3>
+									<p class="project-category">Web Design</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/Kj4q9tjc/project-7.png" alt="summary" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Summary</h3>
+									<p class="project-category">Web Development</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="applications">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/rw2j4B1w/project-8.jpg" alt="task manager" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Task Manager</h3>
+									<p class="project-category">Applications</p>
+								</a>
+							</li>
+
+							<li class="project-item active" data-filter-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img src="https://i.postimg.cc/7LxNsSQv/project-9.png" alt="arrival" loading="lazy" />
+									</figure>
+
+									<h3 class="project-title">Arrival</h3>
+									<p class="project-category">Web Development</p>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</article>
+
+				<!-- <article class="blog" data-page="blog">
+					<header>
+						<h2 class="h2 article-title">Blog</h2>
+					</header>
+
+					<section class="blog-posts">
+						<ul class="blog-posts-list">
+							<li class="blog-post-item">
+								<a href="#">
+									<figure class="blog-banner-box">
+										<img src="https://i.postimg.cc/DysCZrWs/blog-1.jpg" alt="Design conferences in 2024" loading="lazy" />
+									</figure>
+
+									<div class="blog-content">
+										<div class="blog-meta">
+											<p class="blog-category">Design</p>
+											<span class="dot"></span>
+											<time datetime="2024-02-23">Feb 23, 2024</time>
+										</div>
+
+										<h3 class="h3 blog-item-title">Design conferences in 2024</h3>
+										<p class="blog-text">
+											In 2024, several exciting design conferences are set to take place, offering opportunities for professionals and enthusiasts to connect, learn, and share
+											innovative ideas.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="blog-post-item">
+								<a href="#">
+									<figure class="blog-banner-box">
+										<img src="https://i.postimg.cc/QC7qFDMs/blog-2.jpg" alt="Best fonts every designer" loading="lazy" />
+									</figure>
+
+									<div class="blog-content">
+										<div class="blog-meta">
+											<p class="blog-category">Design</p>
+											<span class="dot"></span>
+											<time datetime="2024-01-29">Jan 29, 2024</time>
+										</div>
+
+										<h3 class="h3 blog-item-title">Best fonts every designer</h3>
+										<p class="blog-text">
+											When it comes to typography, choosing the right font is essential for effective design. In this article, I'll bring a brief overview of some of the best
+											fonts that every designer should consider incorporating into their toolkit.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="blog-post-item">
+								<a href="#">
+									<figure class="blog-banner-box">
+										<img src="https://i.postimg.cc/W1T71QcL/blog-3.jpg" alt="Design digest #80" loading="lazy" />
+									</figure>
+
+									<div class="blog-content">
+										<div class="blog-meta">
+											<p class="blog-category">Design</p>
+											<span class="dot"></span>
+											<time datetime="2023-12-20">Dec 20, 2023</time>
+										</div>
+
+										<h3 class="h3 blog-item-title">Design digest #80</h3>
+										<p class="blog-text">
+											Hello, my friends. In this Design Digest, I'll show you a curated collection of the latest trends, insights, and innovations in the design world. This
+											edition highlights key themes and discussions that are shaping the future of design.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="blog-post-item">
+								<a href="#">
+									<figure class="blog-banner-box">
+										<img src="https://i.postimg.cc/2S0n8yxh/blog-4.jpg" alt="2023 UI interactions" loading="lazy" />
+									</figure>
+
+									<div class="blog-content">
+										<div class="blog-meta">
+											<p class="blog-category">Design</p>
+											<span class="dot"></span>
+											<time datetime="2023-11-29">Nov 29, 2023</time>
+										</div>
+
+										<h3 class="h3 blog-item-title">2023 UI interactions</h3>
+										<p class="blog-text">
+											As we move into 2024, 2023 was marked by the rapidly evolution of the landscape of UI interactions, driven by advancements in technology and user
+											expectations. Dive with me in this text to see the main areas changed in this year.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="blog-post-item">
+								<a href="#">
+									<figure class="blog-banner-box">
+										<img src="https://i.postimg.cc/YCCmVkw9/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy" />
+									</figure>
+
+									<div class="blog-content">
+										<div class="blog-meta">
+											<p class="blog-category">Design</p>
+											<span class="dot"></span>
+											<time datetime="2023-11-12">Nov 12, 2023</time>
+										</div>
+
+										<h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+										<p class="blog-text">
+											In the realm of design, spacing is often an overlooked yet crucial element that can significantly impact the overall aesthetic and functionality of a
+											composition. This post will emphasize the importance of white space, margins, and padding in creating visually appealing and effective designs.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="blog-post-item">
+								<a href="#">
+									<figure class="blog-banner-box">
+										<img src="https://i.postimg.cc/zBCBvP16/blog-6.jpg" alt="Design digest #79" loading="lazy" />
+									</figure>
+
+									<div class="blog-content">
+										<div class="blog-meta">
+											<p class="blog-category">Design</p>
+											<span class="dot"></span>
+											<time datetime="2023-10-20">Oct 20, 2023</time>
+										</div>
+
+										<h3 class="h3 blog-item-title">Design digest #79</h3>
+										<p class="blog-text">
+											Hi, my friends. In this Design Digest I'll focus in the tools and resources that we use daily in our projects. Also, I'll include examples of software
+											recommendations, online courses, and design communities that foster collaboration and learning.
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</article> -->
+
+				<article class="contact" data-page="contact">
+					<header>
+						<h2 class="h2 article-title">Contact</h2>
+					</header>
+
+					<section class="mapbox" data-mapbox>
+						<figure>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1983.0294269905692!2d106.70880053824382!3d-6.255977332193773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTUnMjEuNSJTIDEwNsKwNDInMzYuMyJF!5e0!3m2!1sid!2sid!4v1741741009710!5m2!1sid!2sid"
+								width="600"
+								height="450"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</figure>
+					</section>
+
+					<section class="contact-form">
+						<h3 class="h3 form-title">Contact Form</h3>
+
+						<form action="#" class="form" data-form>
+							<div class="input-wrapper">
+								<input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+								<input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input />
 							</div>
 
-							<div class="form-group d-flex flex-column-reverse">
-								<input
-									type="email"
-									class="form-control"
-									name="cf-email"
-									id="cf-email"
-									placeholder="Your Email"
-								/>
+							<textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
 
-								<label for="cf-email" class="webform-label">Your Email</label>
-							</div>
-
-							<div class="form-group d-flex flex-column-reverse">
-								<textarea
-									class="form-control"
-									rows="5"
-									name="cf-message"
-									id="cf-message"
-									placeholder="Your Message"
-								></textarea>
-
-								<label for="cf-message" class="webform-label">Message</label>
-							</div>
-
-							<button
-								type="submit"
-								class="form-control"
-								id="submit-button"
-								name="submit"
-							>
-								Send
+							<button class="form-btn" type="submit" disabled data-form-btn>
+								<ion-icon name="paper-plane"></ion-icon>
+								<span>Send Message</span>
 							</button>
 						</form>
-					</div>
-
-					<div class="mx-auto col-lg-4 col-md-6 col-12">
-						<h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-
-						<p class="mb-1">08979040919</p>
-
-						<p>
-							<a href="#">
-								boysetiawan5635@gmail.com
-								<i class="fas fa-arrow-right custom-icon"></i>
-							</a>
-						</p>
-
-						<ul class="social-links mt-2">
-							<li>
-								<a href="#" rel="noopener" class="fab fa-facebook"></a>
-							</li>
-							<li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
-							<li><a href="#" rel="noopener" class="fab fa-linkedin"></a></li>
-						</ul>
-
-						<p class="copyright-text mt-5 pt-3">
-							Copyright &copy; 2025 Boy Resume Page
-						</p>
-					</div>
-				</div>
+					</section>
+				</article>
 			</div>
-		</section>
-		<!-- SCRIPTS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/smoothscroll.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/custom.js"></script>
+		</main>
+
+		<script src="main.js"></script>
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
