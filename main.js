@@ -96,3 +96,106 @@ for (let i = 0; i < navigationLinks.length; i++) {
 		}
 	});
 }
+
+function openDetail(project) {
+	const modal = document.getElementById("portfolio-detail");
+	const content = document.getElementById("detail-content");
+
+	// Isi konten detail sesuai project
+	if (project === "file-manager") {
+		content.innerHTML = `
+      <h2>File Manager</h2>
+	  <br/>
+      <p>•  Menyimpan Data File (dokumen, gambar, video, audio) bisa diunggah dan disimpan di server online, 	bukan hanya di perangkat lokal. <br/>
+		•	Mengakses File dari Mana Saja, Pengguna bisa login dan membuka file dari laptop, HP, atau tablet selama ada internet. <br/>
+		•	Sinkronisasi Otomatis File yang disimpan akan otomatis tersinkron ke semua perangkat pengguna. <br/>
+		•	Berbagi File dengan Mudah, Pengguna bisa share link atau memberi akses (view/edit/comment) ke orang lain.
+ 		<br/>
+		</p><br/>
+		<img src="img/portfolio/file-manager1.png" width="90%" style="border-radius: 10px">
+		<br/>
+		<p>Tech Stack	: PHP, Laravel, Vue Js, MySQL, Inertia Js , Javascript. 
+		<br/>
+		Github	: <a href="https://github.com/boyarifsetiawan/file-manager" style="display:inline; color: white">Klik Disini</a> . 
+		<br/>
+		</p>
+		<p>Tech Stack	: PHP, Laravel, Vue Js, MySQL, Inertia Js , Javascript. 
+		<br/>
+		Github	: <a href="https://github.com/boyarifsetiawan/file-manager" style="display:inline; color: white">Klik Disini</a> . 
+		<br/>
+		</p>
+
+    `;
+	} else if (project === "multipurpose") {
+		content.innerHTML = `
+      <h2>Laravel Appoinments</h2>
+	  <br/>
+      <p>Fungsi :<br/>
+		•	Menjadwalkan pertemuan, pengguna bisa memesan waktu tertentu untuk bertemu (dokter, dosen, konsultan, salon, dll.). <br/>
+		•	Mencatat data janji temu, siapa, kapan, dan keperluan apa.<br/>
+		•	Mengelola ketersediaan waktu, admin/penyedia layanan bisa menandai jam kosong atau sibuk.<br/>
+		•	Menghindari bentrok jadwal, sistem otomatis mencegah dua orang memesan di waktu yang sama.<br/>
+		Tujuan : <br/>
+		•	Efisiensi waktu, tidak perlu antri manual, cukup pesan online.<br/>
+		•	Meningkatkan layanan, pengguna merasa lebih mudah & cepat.<br/>
+		•	Transparansi jadwal, klien bisa tahu kapan waktu yang tersedia.<br/>
+		•	Mengurangi kesalahan, menghindari double booking atau kelupaan jadwal.<br/> 
+	</p><br/>
+      <img src="img/portfolio/multipurpose.png" width="90%" style="border-radius: 10px">
+	  <br/>
+	  <p>Tech Stack	: PHP, Laravel, Vue Js, MySQL, Javascript. 
+		<br/>
+		Github	: <a href="https://github.com/boyarifsetiawan/laravue-multipurpose" style="display:inline; color: white">Klik Disini</a> . 
+		<br/>
+		</p>
+    `;
+	} else if (project === "task-manager") {
+		content.innerHTML = `
+      <h2>Task Manager</h2>
+	  <br/>
+      <p>Fungsi : <br/>
+		•	Membuat dan mengelola task, tombol Add Task digunakan untuk menambah pekerjaan baru.<br/>
+		•	Membagi status pekerjaan<br/>
+		Pending = task yang sedang dikerjakan atau menunggu.<br/>
+		Completed = task yang sudah selesai.<br/>
+		•	Kolaborasi tim, setiap task bisa punya beberapa assignee (anggota tim yang bertanggung jawab).<br/>
+		Contoh: “Work on Design” punya 2 assignees.<br/>
+		•	Monitoring progress, ada progress bar yang menunjukkan persentase penyelesaian project.<br/>
+		•	Manajemen waktu, ditampilkan StartDate dan EndDate project.<br/>
+		Tujuan :<br/>
+		•	Memudahkan monitoring project, manajer atau anggota tim bisa langsung lihat progres keseluruhan.<br/>
+		•	Mendukung kolaborasi, setiap anggota tahu siapa mengerjakan apa, sehingga mengurangi miskomunikasi.<br/>
+		•	Transparansi pekerjaan, semua orang bisa melihat status task: pending atau completed.<br/>
+		•	Manajemen proyek berbasis cloud, karena berbasis web/cloud, bisa diakses dari mana saja (remote work).<br/>
+
+	</p><br/>
+      <img src="img/portfolio/task-manager1.png" width="90%" style="border-radius: 10px">
+	  <br/>
+      <img src="img/portfolio/task-manager2.png" width="90%" style="border-radius: 10px">
+	  <br/>
+	  <p>Tech Stack	: PHP, Laravel, Vue Js, MySQL, Javascript. 
+		<br/>
+		Github	: <a href="https://github.com/boyarifsetiawan/taskapp" style="display:inline; color: white">Klik Disini</a> . 
+		<br/>
+		</p>
+    `;
+	} else if (project === "blog") {
+		content.innerHTML = `
+      <h2>Laravel Blog</h2>
+	  <br/>
+      <img src="img/portfolio/blog.png" width="90%" style="border-radius: 10px">
+	  <br/>
+	  <p>Tech Stack	: PHP, Laravel, Filament, MySQL, Livewire. 
+		<br/>
+		Github	: <a href="https://github.com/boyarifsetiawan/myblog" style="display:inline; color: white">Klik Disini</a> . 
+		<br/>
+		</p>
+    `;
+	}
+
+	modal.style.display = "block";
+}
+
+function closeDetail() {
+	document.getElementById("portfolio-detail").style.display = "none";
+}
